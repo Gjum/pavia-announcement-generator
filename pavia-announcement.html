@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pavia Announcement Generator</title>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+		</style>
+	</head>
+	<body style="margin: 0">
+		<div
+			id="drawing"
+			style="
+				box-sizing: border-box;
+				padding: 5.2vw 3.1vw;
+				padding-right: 3.5vw;
+				width: 100vw;
+				height: 56vw;
+				/* background-image: url(https://cdn.discordapp.com/attachments/957405493435973692/1125480341856059542/Land_Registry_Update.png); */
+				background-size: contain;
+				font-family: 'Noto Sans', sans-serif;
+				color: white;
+				font-weight: bold;
+				background-color: #0471ba;
+			"
+		>
+			<div
+				style="
+					position: relative;
+					height: 100%;
+					border: 0.5vw solid white;
+					box-sizing: border-box;
+				"
+			>
+				<img
+					src="./pavia-announcement-logo.png"
+					alt="Pavia"
+					style="position: absolute; top: 3.1vw; right: 3.1vw; height: 6.2vw"
+				/>
+				<img
+					src="https://placehold.co/400/steelblue/white?text=Icon"
+					alt="Icon"
+					style="
+						position: absolute;
+						top: 3.4vw;
+						left: 2.9vw;
+						height: 5.2vw;
+						opacity: 0.5;
+					"
+				/>
+				<div
+					style="
+						position: absolute;
+						top: 3vw;
+						left: 9vw;
+						width: 0.4vw;
+						height: 6.2vw;
+						background-color: white;
+					"
+				></div>
+				<div
+					contenteditable
+					style="
+						font-size: 2.73vw;
+						line-height: 25%;
+						position: absolute;
+						top: 1.24vw;
+						left: 10.9vw;
+					"
+				>
+					<p>Bureau of</p>
+					<p>Semiography</p>
+				</div>
+				<div
+					contenteditable
+					style="
+						font-size: 8.25vw;
+						line-height: 1.25em;
+						position: absolute;
+						bottom: 4.15vw;
+						left: 4.85vw;
+						right: 4.85vw;
+					"
+				>
+					Land Registry Update
+				</div>
+			</div>
+		</div>
+		<div id="controls">
+			<label for="bgcolor">
+				Background:
+				<input
+					type="color"
+					id="bgcolor"
+					value="#0471ba"
+					oninput="document.getElementById('drawing').style.backgroundColor=event.target.value"
+				/>
+			</label>
+		</div>
+	</body>
+</html>
